@@ -1,3 +1,9 @@
+#heading{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    color:black;
+}
 #wrapper{
 
     width:1000px;
@@ -11,19 +17,21 @@
 
 
 #ball{
+    position: absolute;
     width:80px;
     height:80px;
     border-radius: 50%;
     background-color:lightseagreen;
-    margin:10px;
-    margin-top: 50px;
-    top:25%;
+    /* margin:10px;
+    margin-top: 50px; */
+    top:40%;
     left:45%;
-    position: absolute;
-}
+
+} 
 
 
 body{
     scroll-behavior: smooth;
+    background-color: gray;
 }
 

@@ -15,31 +15,31 @@ document.addEventListener("keypress",function(event){
     var keypress = event.key;
     var top=element.offsetTop;
     var left=element.offsetLeft;
-    var right= 960;
-    var bottom = 450;
+    var right= 895;
+    var bottom = 410;
 
     if(keypress=="w"||keypress=="W"){
-        if(top>5){
+        if(top>15){
             console.log(element.offsetTop)
-            element.style.top=setValue(top - 5);
+            element.style.top=setValue(top - 25);
         }
     }
     if(keypress=="a"||keypress=="A"){
-        if(left>5){
+        if(left>15){
             console.log(element.offsetLeft)
-            element.style.left=setValue(left - 5);
+            element.style.left=setValue(left - 25);
         }
     }
     if(keypress=="s"||keypress=="S"){
         if(top<bottom){
             console.log(element.offsetTop)
-            element.style.top=setValue(top + 5);
+            element.style.top=setValue(top + 25);
         }
     }
     if(keypress=="d"||keypress=="D"){
         if(left<right){
             console.log(element.offsetLeft)
-            element.style.left=setValue(left + 5);
+            element.style.left=setValue(left + 25);
         }
     }
 
@@ -47,13 +47,3 @@ document.addEventListener("keypress",function(event){
 
 
 });
-// var element=document.getElementById("ball");
-// element.style.marginTop='50px';
-
-// document.addEventListener("keypress",function(event){
-//     var keypress = event.key;
-//     if(keypress=="w"||keypress=="W"){
-//         console.log(parseInt(element.style.marginTop))
-//         element.style.marginTop=parseInt(element.style.marginTop)-5+'px';
-//     }
-// });
